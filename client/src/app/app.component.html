@@ -1,1 +1,28 @@
-<router-outlet></router-outlet>
+<!-- <div class="dark-light-toggle-mode">
+    <mat-slide-toggle
+      #darkModeSwitch
+      (change)="switchTheme()"
+      [checked]="activeTheme"
+    />
+</div> -->
+<!-- <button mat-fab type="button" [hidden]="this.bottomSheetRef" (click)="openBottomSheet()">
+    <mat-icon svgIcon="close"></mat-icon>
+</button> -->
+<div style="height: 100%;">
+    <router-outlet></router-outlet>
+</div>
+
+
+<ng-template #bottomSheet>
+    <mat-nav-list>
+        <a [routerLink]="['/workout']" routerLinkActive="router-link-active" mat-list-item (click)="dismissOpenSheet($event)">
+            <span matListItemTitle>Workouts</span>
+            <span matLine>Add to a note</span>
+        </a>
+    
+        <a [routerLink]="['/groups']" routerLinkActive="router-link-active" mat-list-item (click)="dismissOpenSheet($event)">
+            <span matListItemTitle>Groups</span>
+            <span matLine>Embed in a document</span>
+        </a>
+    </mat-nav-list>
+</ng-template>

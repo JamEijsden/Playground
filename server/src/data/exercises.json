@@ -1,0 +1,25 @@
+[{
+    "name": "Leg press",
+    "order": "1",
+    "sets": 3
+  },{
+    "name": "Back thigh",
+    "order": "2",
+    "sets": 3
+  },{
+    "name": "Bench",
+    "order": "2",
+    "sets": 4
+  },{
+    "name": "Incline",
+    "order": "1",
+    "sets": 3
+  }, {
+    "name": "Bicep",
+    "order": "1",
+    "sets": 4
+  },{
+    "name": "Tricep",
+    "order": "2",
+    "sets": 4
+  }]

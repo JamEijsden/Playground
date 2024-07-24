@@ -1,6 +1,6 @@
 {
     "env": {
-        "node": true,
+        "browser": true,
         "es2021": true
     },
     "extends": [
@@ -16,6 +16,5 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "no-console": false
     }
 }

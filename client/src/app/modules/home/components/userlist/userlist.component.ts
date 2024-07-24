@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/core/services/user.service';
+import { Component } from '@angular/core';
+import { UserService } from '../../../../core/services/user.service';
 import { User } from '../../../../shared/models/user';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-userlist',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './userlist.component.html',
-  styleUrls: ['./userlist.component.scss']
+  styleUrl: './userlist.component.scss'
 })
-export class UserlistComponent implements OnInit {
-  
+export class UserlistComponent {
   constructor(private userService: UserService) {}
 
   users: User[] = [];
@@ -20,5 +22,4 @@ export class UserlistComponent implements OnInit {
   getUsers(): void {
     this.userService.getUsers().subscribe(users => this.users = users);
   }
-
 }

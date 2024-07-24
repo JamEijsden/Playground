@@ -1,0 +1,4 @@
+<app-page-header title="Groups">
+    <mat-icon svgIcon="add" (click)="$addGroup.next(true)"></mat-icon>
+</app-page-header>
+<app-workout-group-list [$newGroup]="$addGroup"></app-workout-group-list>

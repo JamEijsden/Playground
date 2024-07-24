@@ -1,0 +1,31 @@
+[{
+    "name": "Legs",
+    "order": "1",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766d"
+  },{
+    "name": "Back",
+    "order": "2",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766d"
+  }, {
+    "name": "Chest",
+    "order": "4",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766d"
+  },{
+    "name": "Arms",
+    "order": "3",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766d"
+  }, {
+    "name": "Chest",
+    "order": "3",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766e"
+  },{
+    "name": "Arms",
+    "order": "2",
+    "exercises": [],
+    "user": "66a142b1686e7a966dc2766e"
+  }]

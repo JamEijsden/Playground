@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { UserlistComponent } from '../../components/userlist/userlist.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
+  standalone: true,
+  imports: [UserlistComponent],
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrl: './home-page.component.scss'
 })
-export class HomePageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class HomePageComponent {
 
 }

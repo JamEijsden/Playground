@@ -1,0 +1,7 @@
+@if (dataLoaded) {
+    <div class="container">
+        @for (group of groups; track group) {
+            <app-workout-group [group]="group"></app-workout-group>
+        }
+    </div>
+}

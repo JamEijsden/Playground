@@ -1,0 +1,59 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+        <mat-card-title>
+            <div class="header">
+                @if (editMode) {
+                    <mat-form-field class="">
+                        <!-- <mat-label>Group name</mat-label> -->
+                        <input matInput [value]="group.name">
+                    </mat-form-field>
+                } @else {
+                    <span>{{group.name}}</span>
+                }
+                
+                <!-- <mat-icon [svgIcon]="editMode ? 'close' : 'edit'" aria-hidden="false"
+                    (click)="editMode = !editMode;"></mat-icon> -->
+            </div>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list #items>
+            @if (editMode) {
+                @for (exercise of group.exercises; track exercise) {
+                <mat-list-item>
+                    @if (editMode) {
+                        <mat-form-field class="">
+                            <!-- <mat-label>Item name</mat-label> -->
+                            <input matInput [value]="exercise.name">
+                        </mat-form-field>
+                    } @else {
+                        <span>{{exercise.name}}</span>
+                    }
+                </mat-list-item>
+                
+                }
+
+                <div class="add-item">
+                    <mat-icon svgIcon="add" aria-hidden="false" (click)="editMode = !editMode"></mat-icon>
+                    <mat-list-item (click)="addNewItem()">Add item</mat-list-item>
+                
+                </div>
+            } @else {
+                @for (exercise of group.exercises; track exercise) {
+                <mat-list-item>
+                    <div class="header">
+                        <span>{{exercise.name}}</span>
+                        <span>{{exercise.sets}} Set</span>
+                    </div>
+                </mat-list-item>
+                }
+            }
+        </mat-list>
+
+    </mat-card-content>
+    <!-- <mat-card-actions>
+        @if (selectedItems.length > 0) {
+            <button mat-button>Learn More</button>
+        }
+    </mat-card-actions> -->
+</mat-card>

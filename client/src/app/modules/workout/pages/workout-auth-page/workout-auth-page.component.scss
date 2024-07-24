@@ -1,0 +1,21 @@
+div.form-container {
+    height: 100%;
+    display: flex;;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+}
+
+div.input-form {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-form-field, button {
+    max-width: 70%;
+    width: 100%;
+}
